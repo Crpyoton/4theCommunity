@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Themed Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="hero-container theme-home" id="heroContainer">
+
+
+        <nav id="navbar">
+            <div class="nav-brand">Menu</div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+
+            <div class="brand-logo">
+                <img src="4thecomtitle-removebg-preview.png"4theCommunity">  
+            </div>
+                <li><a href="#" class="nav-link active" data-theme="theme-home" data-title="Welcome Home" data-desc="Explore the main dashboard and get a quick overview of what we offer.">Home</a></li>
+                <li><a href="#" class="nav-link" data-theme="theme-about" data-title="About Us" data-desc="From dreamers, visionaries, artists, music enthusiasts, creators, innovators, and advocates — our group came together. The group originally formed from a previous subject last academic year, where we bonded over common interests and the passion for advocacy. As the fourth group, we named ourselves “4ThePeople,” a play of the words “For the people,” describing our commitment to help others in need and to build a safe space for everyone. We wanted to continue pursuing that passion when we learned about the Entrepreneurship Performance Task. Additionally, we invited more friends to be a part of the group. In line with the project, we renamed it to “4TheCommunity” to expand our goals and scope beyond ourselves and include the people in the community we belong to.">About</a></li>
+                <li><a href="#" class="nav-link" data-theme="theme-community" data-title="Community" data-desc="Join our growing network of creators, developers, and learners.">Community</a></li>
+                <li><a href="#" class="nav-link" data-theme="theme-advocacy" data-title="Advocacy" data-desc="Discover the core causes and sustainable initiatives we support.">Advocacy</a></li>
+                <li><a href="#" class="nav-link" data-theme="theme-products" data-title="Products & Services" data-desc="Select items from our interactive checklist below to customize your toolkit:">Products & Services</a></li>
+                <li><a href="#" class="nav-link" data-theme="theme-contact" data-title="Midnight_San ON TIKTOK, FB, INSTA" data-desc="Get in touch with us for inquiries, collaborations, feedback, or support.">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-display">
+            <h1 id="content-title">Welcome Home</h1>
+            <p id="content-desc">Explore the main dashboard and get a quick overview of what we offer.</p>
+            <div id="dynamic-extra-content"></div>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<main class="content-display">
+    <!-- Home Section -->
+    <div id="Section-home" class="content-section">
+        <h1>Welcome Home</h1>
+        <p>Explore the main dashboard and get a quick overview of what we offer.</p>
+    </div>
+
+    <!-- About Section (With multiple paragraphs) -->
+    <div id="section-about" class="content-section active">
+        <h1>About Us</h1>
+        <p>From dreamers, visionaries, artists, music enthusiasts, creators, innovators, and advocates — our group came together.</p>
+        <p>This is your extra second paragraph that will ONLY show up on the About Us tab!</p>
+    </div>
+
+    <!-- Community Section -->
+    <div id="section-community" class="content-section">
+        <h1>Community</h1>
+        <p>Join our growing network of creators, developers, and learners.</p>
+    </div>
